@@ -16,6 +16,7 @@ import hasOwnProperty from './hasOwnProperty';
  * Returns true when the values of all keys are strictly equal.
  */
 function shallowEqual(objA: mixed, objB: mixed): boolean {
+  // 两个值相等的话，直接返回true
   if (is(objA, objB)) {
     return true;
   }
